@@ -8,4 +8,6 @@ app.get('/', (req, res ) =>{
     res.status(500).send("helooo")
 })
 
+app.use('/api/users', require('./routes/userRoute'))
+
 app.listen(port, () => console.log(`App is running or ${port}`))

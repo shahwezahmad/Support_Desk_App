@@ -8,10 +8,9 @@ connectDB()
 const app = express()
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))  
-app.get('/', (req, res ) =>{
-    res.status(500).send("helooo")
-})
+
 
 app.use('/api/users', require('./routes/userRoute'))
+app.use('/api/tickets', require('./routes/ticketRoute.js'))
 app.use(errorHandler)
 app.listen(port, () => console.log(`App is running or ${port}`))

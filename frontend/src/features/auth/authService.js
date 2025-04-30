@@ -1,6 +1,10 @@
 import axios from 'axios'
+// package.json frontend proxy: 
+  // "proxy": "https://support-desk-app-gyct.onrender.com/",
+// const API_URL = '/api/users'
 
-const API_URL = '/api/users'
+
+const API_URL = 'https://support-desk-app-gyct.onrender.com/api/users'
 
 const register = async (user) => {
     const response = await axios.post(API_URL, user)

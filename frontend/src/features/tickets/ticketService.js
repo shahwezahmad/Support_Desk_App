@@ -1,6 +1,10 @@
 import axios from "axios";
 
-const API_URL = "/api/tickets";
+// package.json frontend proxy: 
+// "proxy": "https://support-desk-app-gyct.onrender.com/",
+// const API_URL = '/api/tickets'
+
+const API_URL = "https://support-desk-app-gyct.onrender.com/api/tickets";
 
 const createTicket = async (ticket, token) => {
   const config = {

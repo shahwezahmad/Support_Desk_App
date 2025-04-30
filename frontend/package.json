@@ -2,7 +2,6 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://support-desk-app-gyct.onrender.com/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.6.1",
     "axios": "^1.8.4",
@@ -39,3 +38,5 @@
     ]
   }
 }
+
+

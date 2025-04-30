@@ -7,7 +7,7 @@
     "start": "node backend/server.js",
     "server": "nodemon backend/server.js",
     "client": "npm start --prefix frontend",
-    "dev":"concurrently  \"npm run server\" \"npm run client\" "
+    "dev": "concurrently  \"npm run server\" \"npm run client\" "
   },
   "author": "shahwez ahmad",
   "license": "MIT",
@@ -15,6 +15,7 @@
     "bcryptjs": "^3.0.2",
     "colors": "^1.4.0",
     "concurrently": "^9.1.2",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^5.1.0",
     "express-async-handler": "^1.2.0",

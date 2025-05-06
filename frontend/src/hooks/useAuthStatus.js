@@ -4,7 +4,7 @@ import { useSelector } from "react-redux";
 export const useAuthStatus = () => {
   const [loggedIn, setLoggedIn] = useState(false);
   const [checkStatus, setCheckStatus] = useState(true);
-  const { user } = useSelector((state) => state.auth);
+  const  user  = useSelector((state) => state.auth.user) || JSON.parse(localStorage.getItem('user')) ;
 
   useEffect(() => {
     if (user) {

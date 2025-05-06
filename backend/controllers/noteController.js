@@ -42,11 +42,12 @@ const addNotes = asyncHandler( async (req, res) => {
         throw new Error('Ticket not found')
     }
 
-    const note = Note.create({
+    const note = await Note.create({
         user:req.user.id,
         ticket: req.params.id,
         text,
     })
+    console.log({})
 
     res.status(201).json(note)
 } )

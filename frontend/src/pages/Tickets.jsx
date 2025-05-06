@@ -8,18 +8,7 @@ import TicketItem from "../components/TicketItem"
 
 function Tickets () {
     let {tickets, isLoading , isError, isSuccess,message} = useSelector( states => states.ticket )
-    tickets =  [
-        {
-            "_id": "67f7769e911525c8e51b450d",
-            "user": "67f7768d911525c8e51b4509",
-            "products": "iPhone",
-            "description": "testing quickly",
-            "status": "new",
-            "createdAt": "2025-04-10T07:43:26.716Z",
-            "updatedAt": "2025-04-10T07:43:26.716Z",
-            "__v": 0
-        }
-    ]
+  
     
     const dispatch = useDispatch()
 

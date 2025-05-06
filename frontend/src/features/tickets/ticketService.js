@@ -38,11 +38,11 @@ const getTicket = async (ticketId, token) => {
 };
 
 const closeTicket = async (ticketId, token) => {
-    const config = {
-        headers: {
-            Authorization: `Bearer ${token}`
-        }
-    }
+  let config = {
+    headers: {
+      Authorization: `Bearer ${token}`,
+    },
+  };
 
     const response = await axios.put(`${API_URL}/${ticketId}`, {status: 'closed'}, config)
     return response.data

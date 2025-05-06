@@ -44,7 +44,7 @@ export const authSlice = createSlice({
             state.isError = false
             state.isLoading = false
             state.isSuccess  = false
-            state.user = null
+            // state.user = null
             state.message = ''
         }
     },
